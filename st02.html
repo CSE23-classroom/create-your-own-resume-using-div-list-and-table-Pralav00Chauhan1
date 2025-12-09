@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Product Grid</title>
+<style>
+body {
+font-family: Arial;
+margin: 20px;
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 15px;
+}
+.card {
+border: 1px solid #ccc;
+padding: 10px;
+text-align: center;
+}
+.card img {
+width: 100%;
+height: 150px;
+object-fit: cover;
+}
+@media (max-width: 600px) {
+.grid {grid-template-columns: repeat(1, 1fr);}
+}
+@media (max-width: 900px) {
+.grid { grid-template-columns: repeat(2, 1fr);}
+}
+</style>
+</head>
+<body>
+<h2>Responsive Product Grid</h2>
+<div class="grid">
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkKP87FUfrUPO4LBwr-vAiWM0yg7seecrZQ&s">
+<h3>Product 1</h3>
+<p>₹199</p>
+</div>
+<div class="card">
+<img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/3118
+82/01/sv01/fnd/IND/fmt/png/Skyrocket-Lite-Men's-Running-Shoes">
+<h3>Product 2</h3>
+<p>₹699</p>
+</div>
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz8rP9QmpqbuHf5icil0qV_xuZ3G2xMavosw&s">
+<h3>Product 3</h3>
+<p>₹599</p>
+</div>
+</div>
+</body>
+</html>
