@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids layout</title>
+    <style>
+     html,*{
+        margin:1px;
+        padding: 0px;
+        box-sizing: border-box;
+         
+        /* border: 1px solid #120505; */
+        /* background-color: antiquewhite;*/
+     }
+    main{
+        display: grid;
+        grid-template-rows:100px 600px 150px;
+        gap: 1.5px;
+         
+    }
+    .box{
+        background-color:antiquewhite;
+        gap: 5px;
+        align-content: center;   
+        text-align: center;
+    } 
+    .section{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap:1.5px;
+    }
+    #col{
+        background-color:rgb(234, 216, 193);
+        align-content: center;
+    }
+    #stand{
+        background-color:antiquewhite;
+        width:490px;
+
+        align-content: center;
+    }
+    
+
+
+
+     </style>
+     
+</head>
+<body>
+    <main>
+        <div class="box"><h1>Hello World!</h1></div>
+        <div class="section">
+            <div id="stand"><h2>Aside</h2></div>
+            <div id="col"><h4>Box 1</h4></div>
+            <div id="col"><h4>Box 2</h4></div>
+            <div id="col"><h4>Box 3</h4></div>
+            <div id="col"><h4>Box 4</h4></div>
+        </div>
+
+        <div class="box"><h2>Footer</h2></div>
+    </main>
+    
+</body>
+</html>
